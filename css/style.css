@@ -1,0 +1,65 @@
+html {
+    font-family: basic sans, sans-serif;
+    font-weight: 300;
+}
+* {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body, .container-fluid, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section {
+    margin: 5em 0;
+    border: 1px solid red;
+    height: 400px;
+}
+section:first-child {
+    margin-top: 0;
+}
+h1 {
+    font-size: 23px;
+}
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+.nav {
+    width: 90%;
+    margin: auto;
+    background-color: #77b540;
+    height: 80px;
+    flex: 2;
+}
+.logo {
+    flex: 1;
+    font-weight: 500 !important;
+    font-size: 1.5em;
+    line-height: 25px;
+}
+.nav a {
+    margin: 0 0.5em;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 80px;
+    font-weight: 300;
+}
+.landing {
+    background-color: #77b540;
+    margin-top: -80px;
+}
+.landingWrapper {
+    width: 80%;
+    margin: auto;
+    padding: 4em 2em 4em 1em;
+    height: 100%;
+}
+.credit_card {
+    width: 90%;
+    margin: 4em 0 0 0;
+}
