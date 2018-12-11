@@ -1,5 +1,13 @@
+
+@font-face {
+    font-family: 'basic_sans_sfregular';
+    src: url('../font/basicsanssf-webfont.woff2') format('woff2'),
+         url('../font/basicsanssf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
-    font-family: basic sans, sans-serif;
+    font-family: 'basic_sans_sfregular', sans-serif;
     font-weight: 300;
 }
 * {
@@ -23,6 +31,7 @@ section:first-child {
 }
 h1 {
     font-size: 23px;
+    color: white;
 }
 .clearfix:after {
     display: block;
@@ -33,7 +42,7 @@ h1 {
     width: 90%;
     margin: auto;
     background-color: #77b540;
-    height: 80px;
+    height: 50px;
     flex: 2;
 }
 .logo {
@@ -46,20 +55,44 @@ h1 {
     margin: 0 0.5em;
     color: #FFF;
     text-decoration: none;
-    line-height: 80px;
+    line-height: 50px;
     font-weight: 300;
 }
 .landing {
     background-color: #77b540;
-    margin-top: -80px;
+    margin-top: -50px;
 }
 .landingWrapper {
     width: 80%;
     margin: auto;
-    padding: 4em 2em 4em 1em;
+    padding: 1em 2em 4em 1em;
+    border: 1px solid red;
+    /* padding: 4em 2em 4em 1em; */
     height: 100%;
 }
 .credit_card {
-    width: 90%;
-    margin: 4em 0 0 0;
+    float: left;
+    margin-left: 15%;
+    width: 40%;
+    margin: 0.1em 0 0 0;
+}
+.landingRight {
+    float: left;
+    margin: 10em 0 0 0;
+    border: 1px solid #000;
+}
+.landingRight p {
+    color: white;
+    font-size: 20px;
+}
+.landingRight .btn {
+    background-color: #034667;
+    padding: 0.75em 2em;
+    border-radius: 3px;
+    width: 150px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
 }
