@@ -81,6 +81,14 @@ h1 {
     color: #fff;
     margin: 0 0.5em;
 }
+.right-nav a:last-child {
+    border: 1px solid green; 
+    padding: 10px; 
+    border-radius: 100px; 
+    background: #FFF; 
+    color: #000; 
+    font-weight: 500
+}
 .landing {
     background-color: #77b540;
     margin-top: -50px;
@@ -310,7 +318,7 @@ h1 {
     left: 40px;
 }
 
-.brand { font-size: 20px; color: #000000 }
+.brand { flex: 1; font-size: 1.8em; color: #484848 }
 
 .header-action {
     position: absolute;
