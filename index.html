@@ -11,55 +11,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <div class="container-fluid">
-        <section class="nav">
-            <a href="#" class="logo navbar-brand">Chiji Exchange</a>
-            <div class="pull-right">
-                <a href="#">Exchange</a>
-                <a href="#">Rates</a>
-                <a href="#">Affliation</a>
-                <a href="#">News</a>
-                <a href="#">Help</a>
-                <a href="#">Contact</a>
-            </div>
-        </section>
-        <div class="landing">
-            <div class="landingWrapper clearfix">
-                <div class="pull-left">
-                    
-                    <!-- <img width="280px" src="img/credit_card_payment.png" alt="credit_card"> -->
+        <header class="header">
+                <div class="brand-box" style="flex: 2; width: 90%; margin: auto; height: 50px;">
+                    <span class="brand logo" style="flex: 1">Chiji Exchange</span>
+                    <div class="right-nav">
+                        <a href="#">Exchange</a>
+                        <a href="#">Rates</a>
+                        <a href="#">Affliation</a>
+                        <a href="#">News</a>
+                        <a href="#">Help</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
-                <div class="landingRight">
-                    <h1>Next Level</h1>
-                    <p>
-                        Sell and buy gift cards
-                    </p>
-                    <button class="btn">Start Trade</button>
+                
+                <div class="header-action">
+                        
+                    <h1 class="heading-primary">
+                        <div id="typed-strings">
+                            <span class="heading-primary-main">Welcome!</span>
+                        </div>
+                        <span id="typed"></span>
+                        <span class="heading-primary-sub">Sell and buy gift cards</span>
+                    </h1>
+                    <a  href="javascript:void(Tawk_API.toggle())" class="btn btn-white btn-animated">Start Trade</a>
                 </div>
-            </div>
-        </div>
-        
+            </header>
 
+    <div class="container-fluid">
         <section class="cards" style="padding: 1em 3em;">
             <div class="row m-auto" style=" width: 80% ">
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/itunes.png" class="grayscale" style="width: 150px; margin-top: -65px;">
+                    <img src="img/itunes.png" style="width: 150px; margin-top: -65px;">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/walmart.png" class="grayscale" style="width: 150px; ">
+                    <img src="img/walmart.png" style="width: 150px; ">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/bitcoin.png" class="grayscale" style="width: 150px; margin-top: -25px;">
+                    <img src="img/bitcoin.png" style="width: 150px; margin-top: -25px;">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/ethereum.png" class="grayscale" style="width: 150px; margin-top: -5px;">
+                    <img src="img/ethereum.png" style="width: 150px; margin-top: -5px;">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/amazon.png" class="grayscale" style="width: 150px; margin-top: 10px;">
+                    <img src="img/amazon.png" style="width: 150px; margin-top: 10px;">
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img src="img/google-play.png" class="grayscale" style="width: 150px; margin-top: -55px;">
+                    <img src="img/google-play.png" style="width: 150px; margin-top: -55px;">
                 </div>
             </div>
         </section>
@@ -110,15 +107,40 @@
             </div>
         </section>
 
-        <section class="action">
+        <section class="action" style="padding: 2em">
             <h2 class="text-center"><span class="headline">Got gift cards for sale?</span></h2>  
             <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-                        <p>You can chat with us online or you can contact us via whatsapp</p>
+                <div class="row m-auto" style="width: 68%">
+                    <div class="col text-center" style="width: 50%">
+                        <p>
+                            Do you have giftcards or bitcoins that you will like to trade for cash. If yes then send us a message to sell your giftcards!
+                            You can chat with us online or you can contact us via whatsapp.
+                        </p>
                     </div>
                 </div>
             </div>          
+        </section>
+
+        <section class="action-form" style="margin-top: -120px">
+            <div class="container">
+                <div class="text-center row">
+                    <div class="col-sm-8 offset-md-2">
+                        <div class="card">
+                            <div class="card">
+                                <div class="card-body p-5">
+                                    <a class="btn btn-lg mr-1" style="color: green; border: 2px solid green" target="_blank" href="https://api.whatsapp.com/send?phone=2348137632128">
+                                        Chat with us on whatsapp
+                                    </a>
+                                    <a class="btn btn-lg ml-1" style="background-color: green; color: #fff" href="javascript:void(Tawk_API.toggle())">
+                                        Chat with us Live
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
 
         <section class="exchanges">
@@ -153,7 +175,7 @@
 
         </section>
 
-        <section class="testimonial">
+        <section class="testimonial pb-0 mb-0">
             <h2 class="text-center"> <span class="headline">Testimonial</span></h2>
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -252,6 +274,12 @@
     <script src="js/jquery.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings'
+        });
+    </script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
