@@ -300,7 +300,6 @@ h1 {
   background-size: cover;
     background-position: top;
     position: relative;
-
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
 
@@ -324,7 +323,7 @@ h1 {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .heading-primary-main {
@@ -367,4 +366,16 @@ h1 {
     background-color: #fff;
     color: #777;
   font-size: 14px;
+}
+
+
+
+
+@media all and (max-width: 540px) {
+    .cards .col-6 {
+        margin: 0 3px;
+    }
+    .tutorial .col-12 {
+        margin-bottom: 20px;
+    }
 }
