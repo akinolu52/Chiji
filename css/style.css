@@ -35,7 +35,6 @@ ul li {
 }
 section {
     margin: 5em 0;
-    /* border: 1px solid red; */
     min-height: 100px;
 }
 section:first-child {
@@ -44,17 +43,9 @@ section:first-child {
 section:not(:first-child) {
     padding: 1em 3em
 }
-/* .grayscale { 
-    filter: grayscale(100%); 
-} */
 h1 {
     font-size: 23px;
     color: white;
-}
-.clearfix:after {
-    display: block;
-    content: " ";
-    clear: both;
 }
 .nav {
     width: 90%;
@@ -66,8 +57,9 @@ h1 {
 .logo {
     flex: 1;
     font-weight: 500 !important;
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 25px;
+    color: #484848
 }
 .nav a, .right-nav {
     margin: 0 1.5em;
@@ -89,61 +81,6 @@ h1 {
     color: #000; 
     font-weight: 500
 }
-.landing {
-    background-color: #77b540;
-    margin-top: -50px;
-}
-.landingWrapper {
-    width: 80%;
-    margin: auto;
-    padding: 1em 2em 4em 1em;
-    border: 1px solid red;
-    /* padding: 4em 2em 4em 1em; */
-    height: 100%;
-}
-.credit_card {
-    float: left;
-    margin-left: 15%;
-    width: 40%;
-    margin: 0.1em 0 0 0;
-}
-.landingRight {
-    float: left;
-    margin: 10em 0 0 0;
-    border: 1px solid #000;
-}
-.landingRight p {
-    color: white;
-    font-size: 20px;
-}
-.landingRight .btn {
-    background-color: #034667;
-    padding: 0.75em 2em;
-    border-radius: 3px;
-    width: 150px;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-top: 40px;
-}
-
-
-
-/* .card:not(:last-child), */
-.card::after {
-    /* content: url("../img/arrow.png"); */
-    /* content: " -> "; */
-    /* background-image: url("../img/arrow.png") */
-}
-.card {
-    /* background-image: url("../img/arrow.png"); */
-}
-
-
-
-
-
 
 
 /* testimonials */
@@ -152,30 +89,21 @@ h1 {
     background-repeat: no-repeat;
     background-position: 5px 65px;
 }
-  /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    /* bottom: 3rem; */
     z-index: 10;
+      color: #000;
   }
-  
-  /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 20rem;
-    /* border: 1px solid #000; */
   }
   .carousel-item > img {
       margin: 10px auto;
-  }
-  .carousel-caption {
-      color: #000;
-      /* margin: 20px 0; */
   }
   .testimonial-name {
     width:60%; 
     text-align:center; 
     border-bottom: 1px solid #c9c9c9; 
     line-height:0.1em; 
-    /* margin:10px 0 20px; */
     margin: 20px auto;
   }
   .testimonial-name span {
@@ -276,35 +204,10 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header {
     height: 80vh;
     background-image: 
-    linear-gradient(to right bottom,     rgba(170, 241, 198, 0.8),    rgba(4, 121, 62, 0.8)),    url(../img/payment.png);
-   /* rgba(76, 216, 255, 0.8),
-   rgba(30, 108, 217, 0.8)),
-   url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg'); */
-    
+    linear-gradient(to right bottom,     rgba(170, 241, 198, 0.8),    rgba(4, 121, 62, 0.8)),    url(../img/payment.png);   
   background-size: cover;
     background-position: top;
     position: relative;
@@ -315,9 +218,11 @@ h1 {
     position: absolute;
     top: 40px;
     left: 40px;
+    flex: 2; 
+    width: 90%; 
+    margin: auto; 
+    height: 50px;
 }
-
-.brand { flex: 1; font-size: 1.8em; color: #484848 }
 
 .header-action {
     position: absolute;
@@ -325,6 +230,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    text-transform: uppercase;
+
 }
 
 .heading-primary {
@@ -351,7 +258,6 @@ h1 {
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
@@ -376,14 +282,170 @@ h1 {
   font-size: 14px;
 }
 
+/* cards */
+.container-fluid > section.cards {
+    padding: 1em 3em;
+}
+.container-fluid > section.cards div.row {
+    width: 80%
+}
+.container-fluid > section.cards div.row img {
+    width: 150px
+}
+.container-fluid > section.cards div.row div:nth-child(1) {
+    margin-top: -65px;
+}
+.container-fluid > section.cards div.row div:nth-child(3) {
+    margin-top: -25px;
+}
+.container-fluid > section.cards div.row div:nth-child(4) {
+    margin-top: -5px;
+}
+.container-fluid > section.cards div.row div:nth-child(5) {
+    margin-top: 10px;
+}
+.container-fluid > section.cards div.row div:nth-child(6) {
+    margin-top: -55px;
+}
 
-
+.tutorial .row {
+    width: 80%; 
+    margin: 2.5em auto;
+}
+.tutorial .row .card, 
+.tutorial .row .card .card-body {
+    padding: 2em 2em 0;
+}
+.tutorial .row .card .card-footer {
+    background-color: transparent; 
+    border: none;
+}
+.tutorial .row .card .card-footer img {
+    width: 100px
+}
+section.action {
+    padding: 2em
+}
+section.action .row {
+    width: 68%
+}
+section.action .row .col {
+    width: 50%
+}
+section.action-form {
+    margin-top: -120px
+}
+section.action-form a:first-child {
+    color: green; border: 2px solid green
+}
+section.action-form a:last-child {
+    background-color: green; color: #fff
+}
+footer {
+    background: #000; 
+    color: #f7f7f7; 
+    padding: 3em; 
+    min-height: 300px;
+}
+footer a {
+    color: #FFF;
+    font-weight: 600;
+}
 
 @media all and (max-width: 540px) {
-    .cards .col-6 {
-        margin: 0 3px;
+    .brand-box {
+        margin: 0;
+        flex: 1;
+        left: auto;
+        width: 100%;
+        text-align: center;
     }
-    .tutorial .col-12 {
-        margin-bottom: 20px;
+    .brand-box .right-nav {
+        width: 100%;
+        float: none;
+        margin: 0 auto 50px;
     }
+    .brand-box .logo {
+        display: block;
+        margin: 5px auto 20px; 
+    }
+    .brand-box .right-nav a:last-child {
+        display: none;
+    }
+
+    .heading-primary {
+        width: 100%;
+    }
+
+    .container-fluid > section.cards {
+        padding: 1em;
+        display: flex;
+    }
+    .container-fluid > section.cards div.row {
+        width: 90%; 
+        display: flex;
+    }
+    .container-fluid > section.cards div.row div.col-6 {
+        width: 40%;
+        margin: auto;
+        align-self: auto;
+    }
+    .container-fluid > section.cards div.row img {
+        width: 100%;
+    }
+    .tutorial {
+        padding: 1em;
+    }
+    .tutorial .row {
+        width: 100%;
+        margin: 1.5em auto;
+    }
+    .tutorial .row .card {
+        margin-bottom: 1.5em;
+        padding: 0;
+    }
+    .tutorial .row .card .card-body {
+        padding: 2em 2em 0;
+    }
+    section.action {
+        padding: 1.5em
+    }
+    section.action .row {
+        width: 90%
+    }
+    section.action .row .col {
+        width: 80%
+    }
+    section.action-form .container, 
+    section.action-form .row {
+        width: 100%;
+    }
+    section.action-form .container .col-sm-8 {
+        width: 130%;
+        margin-left: -8%;
+    }
+    section.action-form .container .card-body {
+        width: 120%;
+    }
+    section.action-form a {
+        margin-bottom: 1em;
+    }
+    section.action-form a:first-child {
+        margin-left: -50px;
+    }
+    section.action-form a:last-child {
+        margin-left: -18% !important;
+    }
+    .testimonial {
+        background: none;
+    }
+    .testimonial-name {
+        width: 100%
+    }
+    footer .row {
+        text-align: left;
+        margin: 0;
+        padding-left: 0 !important ;
+    }
+
 }
