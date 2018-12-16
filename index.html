@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chiji Exchange</title>
+    <title>Buy and sell digital currency in Nigeria at best rate | Chiji14xchange</title>
+    <meta name="author" content="Akinyemi Olumide Emmanuel" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Buy and sell digital currency in Nigeria at best rate" />
+	<meta property="og:url" content="https://chiji14xchange.com/" />
+	<meta property="og:description" content="Buy and sell digital currency in Nigeria at best rate" />
+	<meta property="og:image" content="https://chiji14xchange.com/images/logo.png" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,7 +19,7 @@
 <body>
     <header class="header">
         <div class="brand-box">
-            <span class="logo">Chiji Exchange</span>
+            <span class="logo">Chiji14xchange</span>
             <div class="right-nav">
                 <a href="https://chiji14xchange.com/">Exchange</a>
                 <a href="https://chiji14xchange.com/rates.php">Rates</a>
@@ -137,6 +143,28 @@
 
         <section class="exchanges">
             <!-- this will contain our rates reseves and latest exchange -->
+            <h2 class="text-center"><span class="headline">Our Rates</span></h2>
+            <ul class="responsive-table">
+                <li class="table-header">
+                    <div class="c c-1">#</div>
+                    <div class="c c-2">Currencies</div>
+                    <div class="c c-3">We buy at</div>
+                    <div class="c c-4">We sell at</div>
+                </li>
+                <li class="table-row">
+                    <div class="c c-1" data-label="id">1</div>
+                    <div class="c c-2" data-label="currency">Bitcoin (BTC) </div>
+                    <div class="c c-3" data-label="buy">₦350/$</div>
+                    <div class="c c-4" data-label="sell">₦370/$</div>
+                </li>
+                <li class="table-row">
+                    <div class="c c-1" data-label="id">2</div>
+                    <div class="c c-2" data-label="currency">Ethereum (ETH) </div>
+                    <div class="c c-3" data-label="buy">₦345/$</div>
+                    <div class="c c-4" data-label="sell">₦370/$</div>
+                </li>
+            </ul>
+
             <h2 class="text-center"><span class="headline">Latest Exchanges</span></h2>
             <ul class="responsive-table">
                 <li class="table-header">
@@ -162,6 +190,30 @@
                     <div class="c c-2" data-label="currency">Bitcoin (BTC) - Bank Transfer (NGN)</div>
                     <div class="c c-3" data-label="amount">1.04 <sup>BTC</sup> - 1122002 <sup>NGN</sup> </div>
                     <div class="c c-4" data-label="date">2 days ago</div>
+                </li>
+            </ul>
+
+            <h2 class="text-center"><span class="headline">Our Reseves</span></h2>
+            <ul class="responsive-table">
+                <li class="table-header">
+                        <div class="c c-1">#</div>
+                        <div class="c c-2">Currencies</div>
+                        <div class="c c-3">Amount</div>
+                </li>
+                <li class="table-row">
+                    <div class="c c-1" data-label="id">21</div>
+                    <div class="c c-2" data-label="currency">Bank Transfer (NGN)</div>
+                    <div class="c c-3" data-label="amount">699968324343.88 <sup>NGN</sup></div>
+                </li>
+                <li class="table-row">
+                    <div class="c c-1" data-label="id">21</div>
+                    <div class="c c-2" data-label="currency">Ethereum (ETH)</div>
+                    <div class="c c-3" data-label="amount">1000.00 <sup>ETH</sup></div>
+                </li>
+                <li class="table-row">
+                    <div class="c c-1" data-label="id">21</div>
+                    <div class="c c-2" data-label="currency">Bitcoin (BTC)</div>
+                    <div class="c c-3" data-label="amount">400.00 <sup>BTC</sup></div>
                 </li>
             </ul>
 
@@ -238,7 +290,7 @@
                     <div class="col-md-3">
                         <h4 class="text-success">Resources</h4>
                         <ul>
-                            <li><a href="https://chiji14xchange.com/#singin">Login</a></li>
+                            <li><a href="#signin" data-toggle="modal">Login</a></li>
                             <li><a href="https://chiji14xchange.com/signup.php">Register</a></li>
                             <li><a href="https://chiji14xchange.com/news.php">News</a></li>
                         </ul>
@@ -261,6 +313,46 @@
             </div>
 
         </footer>
+
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title" id="myModalLabel"><i class="fa fa-user-circle-o"></i> Log in</h2>
+                        <div class="pull-right">Not a member yet? <a href="https://chiji14xchange.com/signup.php"><b>Sign Up</b></a></div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login_box" style="padding: 10px; border-radius: 10px;">
+                            <form action="https://chiji14xchange.com/login.php" method="post">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control input-lg" name="username" value="" size="25" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control input-lg" name="password" value="" size="25" required="required" />
+                            </div>
+                            <div class="checkbox">
+                            <label>
+                                <input type="checkbox" class="checkboxx" name="rememberme" id="rememberme" value="1" checked="checked" /> Remember me			  </label>
+                            </div>
+                            <div class="form-group">
+                                    <input type="hidden" name="action" value="login" />
+                                    <input type="submit" class="btn btn-success btn-lg" name="login" id="login" value="Login" />
+                            </div>
+                            <div class="form-group">
+                                    <a href="https://chiji14xchange.com/forgot.php">Forgot your password?</a>
+                                                            <p><a href="https://chiji14xchange.com/activation_email.php">Didn't receive activation email?</a></p>
+                                                </div>
+                            </form>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="js/jquery.js"></script>
