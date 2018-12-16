@@ -360,7 +360,7 @@ footer a:focus  {
 
 @media all and (max-width: 540px) {
     .brand-box {
-        margin: 0;
+        margin: 0 0 1em;
         flex: 1;
         left: auto;
         width: 100%;
@@ -452,6 +452,10 @@ footer a:focus  {
         text-align: left;
         margin: 0;
         padding-left: 0 !important ;
+    }
+
+    .tutorial .headline:after {
+        left: 70%;
     }
 
 }
